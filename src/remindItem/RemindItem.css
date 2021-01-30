@@ -1,0 +1,285 @@
+
+
+.note{
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    margin: 20px 0;
+    border: 1px solid  #bebebe;
+    border-radius: 7px
+}
+
+.main__note__block{
+    display: flex;
+}
+
+
+
+.note__circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 21px;
+    height: 20px;
+    border: 1px solid #bebebe;
+    border-radius: 100%;
+    margin-right: 10px;
+    background-color: transparent; 
+}
+
+.note__circle-unchecked{
+    display: block;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: transparent;
+    transition: background-color .6s ease;
+    cursor: default;
+}
+
+
+.note__circle-checked{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #24abeb;
+    transition: background-color .6s ease;
+}
+
+
+.note__area{
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.note__title-block{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    cursor: default;
+}
+
+.note__title{
+    height: 35px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    outline: none;
+    padding-right: 80px;
+}
+
+.note__title::first-letter{
+    text-transform: uppercase;
+}
+
+.note__title-editor-unchecked{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 20px;
+    border: 1px solid;
+    border-color: transparent;
+    border-radius: 100%;
+    margin-right: 10px;
+    background-color: transparent;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 19px;
+    font-weight: 500;
+    color: transparent;
+    transition: border-color .6s ease, color 1s ease;
+    margin-left: 20px;
+    outline: none;
+}
+
+.note__title-editor{
+    border-color:  #24abeb;
+    color: #24abeb;
+    transition: border-color .6s ease, color 1s ease;
+    cursor: default;
+}
+
+.note__title-editor:hover{
+    border-color:  #3b68a9;
+    color: #3b68a9;
+    transition: border-color .6s ease, color 1s ease;
+    cursor: default;
+}
+
+.note__menu{
+    height: 75px;
+    width: 115px;
+    list-style: none;
+    position: absolute;
+    padding: 0;
+    top: 0;
+    right: 0;
+    border: 1px solid#e0e0e0;
+    border-radius: 3px;
+    display: none;
+}
+
+.note__menu-show{
+    display: block;
+    background: #fff;
+}
+
+.note__menu-hide{
+    display: none;
+}
+
+
+.note__menu-item{
+    font-size: 12px;
+    padding: 5px 0;
+    padding-left: 5px;
+    background-color: transparent;
+    color: #999999;
+    transition: background-color .6s ease;
+}
+
+.note__menu-item:hover{
+    color: #000;
+    background-color: #24abeb;
+    transition: background-color .6s ease;
+}
+
+.note__remove:hover{
+    background-color: tomato;
+    transition: background-color .6s ease;
+}
+
+
+
+.note__preview{
+    height: 20px;
+    font-size: 14px;
+    color: #999999;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0;
+    padding: 12px 0;
+    border-bottom: 2px solid #e0e0e0;
+    cursor: default;
+    padding-right: 100px;
+}
+
+.note__preview::first-letter{
+    text-transform: uppercase;
+}
+
+.note-is-done{
+    text-decoration: line-through;
+}
+
+
+.time__settings{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0 10px;
+}
+
+.time__settings-hide{
+    display: none;
+}
+
+.time__settings-date{
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    cursor: default;
+    margin-right: 20px;
+}
+
+.remind__choose__date{
+    font-size: 16px;
+    color: #000;
+    cursor: default;
+}
+
+
+.choose__date{
+    font-size: 16px;
+    color: #000;
+    cursor: default;
+    margin-left: 50px;
+    display: none;
+    font-family: inherit;
+}
+
+.choose__date-show{
+    display: -webkit-inline-flex;
+}
+
+.toggle-box{
+    height: 25px;
+    width: 55px;
+    border: 1px solid  #999999;
+    border-radius: 13px;
+    background-color: transparent;
+    transition: background-color .6s ease;
+}
+
+.toggle-box-check{
+    background-color: yellowgreen;
+    transition: background-color .7s ease;
+}
+
+.toggle-box-circle{
+    height: 25px;
+    width: 25px;
+    background-color: #999999;
+    border-radius: 100%;
+    transform: translateX(0);
+    transition: transform .7s ease;
+}
+
+.toggle-box-circle-check{
+    transform: translateX(30px);
+    transition: transform .6s ease;
+}
+
+
+.time__settings-time{
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    cursor: default;
+    margin-right: 20px;
+    margin-left: 50px;
+}
+
+
+.choose__time{
+    font-size: 16px;
+    color: #000;
+    cursor: default;
+    margin-left: 50px;
+    display: none;
+    font-family: inherit;
+}
+
+.remind__choose__time{
+    font-size: 16px;
+    color: #000;
+    cursor: default;
+}
+
+.choose__time-show{
+    display: -webkit-inline-flex;
+}

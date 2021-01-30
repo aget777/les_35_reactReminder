@@ -1,6 +1,7 @@
 import './App.css';
 import Header from '../header/Header';
 import ReminderList from '../reminderList/ReminderList';
+import AddRemind from '../addRemind/AddRemind';
 
 const remindItems = [
   {title: 'Заголовок напоминания 1', text: 'Тестовый текст', date: '30.01.2021', time: '15:40'},
@@ -13,6 +14,7 @@ function App() {
     <>
     <Header />
     <ReminderList remindItems = {remindItems}/>
+    <AddRemind />
     </>
   );
 }
